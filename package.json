@@ -1,0 +1,35 @@
+{
+  "name": "netorbit",
+  "version": "1.0.0",
+  "private": true,
+  "description": "NetOrbit - Enterprise ISP Management Platform",
+  "scripts": {
+    "dev": "turbo run dev",
+    "build": "turbo run build --concurrency 1",
+    "test": "turbo run test",
+    "test:e2e": "turbo run test:e2e",
+    "lint": "turbo run lint",
+    "typecheck": "turbo run typecheck",
+    "migration:run": "turbo run migration:run --filter=@netorbit/api",
+    "migration:revert": "turbo run migration:revert --filter=@netorbit/api",
+    "seed": "turbo run seed --filter=@netorbit/api",
+    "clean": "turbo run clean"
+  },
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "devDependencies": {
+    "turbo": "^2.0.0",
+    "typescript": "^5.4.5",
+    "prettier": "^3.3.2",
+    "eslint": "^8.57.0",
+    "@typescript-eslint/eslint-plugin": "^7.13.0",
+    "@typescript-eslint/parser": "^7.13.0"
+  },
+  "packageManager": "pnpm@10.26.2",
+  "engines": {
+    "node": ">=22.0.0",
+    "pnpm": ">=10.0.0"
+  }
+}

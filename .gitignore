@@ -1,0 +1,35 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Builds & Outputs
+dist/
+build/
+.next/
+coverage/
+.turbo/
+*.tsbuildinfo
+
+# Environment & Credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Database & Local Infrastructure Storage
+infrastructure/pgdata/
+dump.rdb
+
+# Logs & Temp
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# OS & Editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.iml
